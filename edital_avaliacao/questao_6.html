@@ -23,13 +23,7 @@
               .then(response => response.json())
               .then(data => {
                   console.log(data);
-                  const dadosExemplo = [
-                        { label: 'Blusas', valor: 10 },
-                        { label: 'Saias', valor: 20 },
-                        { label: 'Calças', valor: 15 },
-                        { label: 'Vestidos', valor: 25 }
-                    ];
-                  plotarGrafico(dadosExemplo);
+                  plotarGrafico(data);
               })
               .catch(error => {
                   console.error('Erro ao ler o arquivo JSON:', error);
